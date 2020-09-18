@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Tasklist; //追加
 
-class TasklistsController extends Controller
+class TasksController extends Controller
 {
     /**
      * Display a listing of the resource.
