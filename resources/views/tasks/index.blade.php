@@ -4,7 +4,7 @@
 
     <h1>Tasklist</h1>
 
-    @if (count($tasklists) > 0)
+    @if (count($tasks) > 0)
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -13,11 +13,11 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($tasklists as $tasklist)
+                @foreach ($tasks as $task)
                 <tr>
                     {{-- Page of Tasklist detailsページへのリンク --}}
-                    <td>{!! link_to_route('tasklists.show', $tasklist->id, ['tasklist' => $tasklist->id]) !!}</td>
-                    <td>{{ $tasklist->content }}</td>
+                    <td>{!! link_to_route('tasks.show', $task->id, ['task' => $task->id]) !!}</td>
+                    <td>{{ $task->content }}</td>
                 </tr>
     @endforeach
             </tbody>
@@ -25,7 +25,7 @@
     @endif
     
     {{-- Create a task listページへのリンク --}}
-    {!! link_to_route('tasklists.create', 'Create a task list', [], ['class' => 'btn btn-primary']) !!}
+    {!! link_to_route('tasks.create', 'Create a task list', [], ['class' => 'btn btn-primary']) !!}
 
     
 @endsection

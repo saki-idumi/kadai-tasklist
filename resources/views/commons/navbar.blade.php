@@ -11,7 +11,7 @@
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
                 {{-- メッセージ作成ページへのリンク --}}
-                <li class="nav-item">{!! link_to_route('tasklists.create', 'Create Tasklist', [], ['class' => 'nav-link']) !!}</li>
+                <li class="nav-item">{!! link_to_route('tasks.create', 'Create Task', [], ['class' => 'nav-link']) !!}</li>
             </ul>
         </div>
     </nav>
