@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
-<h1>id: {{ $task->id }} Edit task list</h1>
+    
+    <h1>id: {{ $task->id }} Edit task list</h1>
 
     <div class="row">
         <div class="col-6">
