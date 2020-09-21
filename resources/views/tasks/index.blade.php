@@ -9,7 +9,7 @@
             <thead>
                 <tr>
                     <th>id</th>
-                    <th>Tasklist</th>
+                    <th>Task</th>
                     <th>Status</th>
                 </tr>
             </thead>
