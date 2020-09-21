@@ -10,6 +10,7 @@
                 <tr>
                     <th>id</th>
                     <th>Tasklist</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -18,8 +19,9 @@
                     {{-- Page of Tasklist detailsページへのリンク --}}
                     <td>{!! link_to_route('tasks.show', $task->id, ['task' => $task->id]) !!}</td>
                     <td>{{ $task->content }}</td>
+                    <td>{{ $task->status }}</td>
                 </tr>
-    @endforeach
+                @endforeach
             </tbody>
         </table>
     @endif

@@ -13,6 +13,10 @@
             <th>Tasklist</th>
             <td>{{ $task->content }}</td>
         </tr>
+        <tr>
+            <th>Status</th>
+            <td>{{ $task->status }}</td>
+        </tr>
     </table>
     {{-- Edit task list --}}
     {!! link_to_route('tasks.edit', 'Edit task list', ['task' => $task->id], ['class' => 'btn btn-light']) !!}
